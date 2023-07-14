@@ -200,7 +200,7 @@ end
 
 ```elixir
 # 10 seconds
-schedule_time = 10_000
+schedule_time = 10
 
 Flume.enqueue_in(:queue_name, schedule_time, MyApp.FancyWorker, [arg_1, arg_2])
 ```
@@ -209,7 +209,7 @@ Flume.enqueue_in(:queue_name, schedule_time, MyApp.FancyWorker, [arg_1, arg_2])
 
 ```elixir
 # 10 seconds
-schedule_time = 10_000
+schedule_time = 10
 
 Flume.enqueue_in(:queue_name, schedule_time, MyApp.FancyWorker, :myfunc, [arg_1, arg_2])
 ```
